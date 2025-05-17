@@ -66,7 +66,7 @@ while (option != "4")
             string parkedTimeString = Console.ReadLine();
             decimal.TryParse(parkedTimeString, out decimal parkedTime);
             decimal totalToPay = parking.TotalToPay(initialPrice, pricePerHour, parkedTime); 
-            Console.WriteLine($"The vehicle {licensePlate} has been removed and the total price was R${totalToPay}");
+            Console.WriteLine($"The vehicle {licensePlate} has been removed and the total price was {totalToPay.ToString("C2")}");
             Console.WriteLine("");
             Console.WriteLine("-------------------------");
         break;
